@@ -6,7 +6,7 @@ const userFileModel = require('../models/userfile.model');
 
 exports.registerUser = (request, response) => {
 
-    console.log('received register user request');
+    console.log('received register user request',request.body);
 
     usersModel.registerUser(response.locals).then((user, error) => {
 
